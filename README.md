@@ -1,6 +1,6 @@
 # 📊 Data Analysis Portfolio
 
-Welcome to my Data Analysis portfolio repository! This collection showcases a wide range of machine learning and data science techniques I have applied using Python, Power BI, and AI-based tools (ChatGPT). Each project explores a different aspect of the data analytics workflow from exploratory data analysis (EDA) to machine learning modeling, visualization, and business interpretation.
+Welcome to my Data Analysis portfolio repository! This collection showcases a wide range of machine learning and data science techniques I have applied using Python and Power BI, Each project explores a different aspect of the data analytics workflow from exploratory data analysis (EDA) to machine learning modeling, visualization, and business interpretation.
 
 ---
 
