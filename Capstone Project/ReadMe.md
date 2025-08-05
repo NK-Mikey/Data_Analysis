@@ -68,3 +68,15 @@ Graduate – Business Analytics, Seneca College
 [LinkedIn](https://www.linkedin.com/in/naveen-karan-krishna/) | [Email](mailto:naveenxkaran@gmail.com)
 
 ---
+
+## 👤 Co-Author
+
+**Mayra Geraldine Reinoso Varon**
+
+**Ato Kwamena Essiem** 
+
+**Charles Ifeanyi Okpala** 
+
+**Jonada Golemaj**
+
+---
