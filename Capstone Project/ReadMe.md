@@ -1,6 +1,6 @@
 # 🚗 Tesla Fatal Crash Analysis (2013–2023)
 
-This project presents a data-driven analysis of 294 fatal Tesla crashes between 2013 and 2023, comparing Autopilot/FSD and Manual driving modes. Using statistical testing and natural language processing (NLP) techniques, the study investigates whether Autopilot contributes to crash severity and identifies recurring root-cause themes from narrative crash descriptions.
+This study analyzes Tesla’s fatal crash records to understand safety outcomes between Autopilot and manual driving. The findings indicate no statistical difference in fatality rates, but mode-specific patterns exist. NLP revealed distinct crash themes, offering actionable recommendations for Tesla engineers, regulators, and the public. The project promotes data-driven innovation and better safety design in autonomous systems.
 
 ---
 
@@ -58,12 +58,6 @@ This project presents a data-driven analysis of 294 fatal Tesla crashes between 
 - Add telemetry and weather data for richer context
 - Upgrade NLP pipeline using transformers (e.g., BERT)
 - Visualize data interactively via `Plotly` or `Dash`
-
----
-
-## 📚 Executive Summary
-
-This study analyzes Tesla’s fatal crash records to understand safety outcomes between Autopilot and manual driving. The findings indicate no statistical difference in fatality rates, but mode-specific patterns exist. NLP revealed distinct crash themes, offering actionable recommendations for Tesla engineers, regulators, and the public. The project promotes data-driven innovation and better safety design in autonomous systems.
 
 ---
 
