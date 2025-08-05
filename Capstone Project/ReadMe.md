@@ -86,3 +86,7 @@ Graduate – Business Analytics, Seneca College
 - TeslaDeaths.com for the crash data used in the capstone.
 
 ---
+
+## Please credit this work when used: © 2025 NK, MIT Licensed.
+
+---
