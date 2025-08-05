@@ -31,6 +31,8 @@ Welcome to my Data Analysis portfolio repository! This collection showcases a wi
 ---
 
 ## 🧾 License
+
 These projects are licensed under the MIT License.
 
+Please credit these works when used: © 2025 NK, MIT Licensed.
 ---
