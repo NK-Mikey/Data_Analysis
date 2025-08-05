@@ -80,3 +80,9 @@ Graduate – Business Analytics, Seneca College
 **Jonada Golemaj**
 
 ---
+
+## 🙌 Acknowledgements
+- Kaggle datasets and open-source datasets used for model training and testing.
+- TeslaDeaths.com for the crash data used in the capstone.
+
+---
