@@ -19,3 +19,18 @@ Welcome to my Data Analysis portfolio repository! This collection showcases a wi
 | [Capstone Project](./Capstone%20Project) | NLP, Statistical Testing | Independent t-test comparing Autopilot vs Manual fatalities + LDA Topic Modeling on crash narratives. |
 
 ---
+
+## Each folder includes:
+
+📘 Jupyter notebooks
+
+📊 Power BI dashboards (where applicable)
+
+📄 README inside (with explanation per project)
+
+---
+
+## 🧾 License
+These projects are licensed under the MIT License.
+
+---
