@@ -18,6 +18,7 @@ Welcome to my Data Analysis portfolio repository! This collection showcases a wi
 | [Lego Historical Analysis](./Lego%20Historical%20Analysis) | AI vs Traditional | Comparative study between ChatGPT-generated analysis and traditional Python/Power BI workflows. |
 | [Capstone Project](./Capstone%20Project) | NLP, Statistical Testing | Independent t-test comparing Autopilot vs Manual fatalities + LDA Topic Modeling on crash narratives. |
 | [Data Mining Final Project](./Data%20Mining%20Final%20Project) | RFM vs KMeans | Customer Segmentation using RFM and KMeans Clustering. |
+| [Predictive Analysis Final Project](./Predictive%20Analysis%20Final%20Project) | Logistics, Decision Tree & Random Forest | Predicting bank customer churn using ML models. |
 
 ---
 
