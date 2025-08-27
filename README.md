@@ -26,7 +26,7 @@ Welcome to my Data Analysis portfolio repository! This collection showcases a wi
 
 📘 Jupyter notebooks
 
-📊 Power BI dashboards (where applicable)
+📊 Report and Power BI dashboards (where applicable)
 
 📄 README inside (with explanation per project)
 
