@@ -23,7 +23,7 @@ from PIL import Image as PILImage
 from send_email import send_email_smtp
 
 # ===============================
-# CONFIGURATION
+# PART 1: CONFIGURATION
 # ===============================
 
 # Portfolio Configuration
@@ -345,17 +345,19 @@ def create_pdf_report(report_path, metrics, asset_metrics, charts, config=None):
 # MAIN PIPELINE
 # ===============================
 
+# Main function to run the pipeline
 def main():
-    end = datetime.now()
-    start = end - timedelta(days=LOOKBACK_DAYS)
+    end = datetime.now() # Current date
+    start = end - timedelta(days=LOOKBACK_DAYS) # Start date based on lookback period
 
-    prices = fetch_prices(TICKERS, start, end)
-    close_prices = validate_and_align(prices)
-    rets = close_prices.pct_change().dropna()
+    prices = fetch_prices(TICKERS, start, end) # Fetch historical price data
+    close_prices = validate_and_align(prices) # Validate and align price data
+    rets = close_prices.pct_change().dropna() # Calculate daily returns
 
-    weights = np.array([WEIGHTS[t] for t in rets.columns])
-    port_rets = rets.dot(weights)
+    weights = np.array([WEIGHTS[t] for t in rets.columns]) # Get weights array
+    port_rets = rets.dot(weights) # Calculate portfolio returns
 
+    # Compute metrics
     metrics = {
         "Annual Return": annualized_return(port_rets),
         "Annual Volatility": annualized_vol(port_rets),
@@ -366,6 +368,7 @@ def main():
         "VaR 99%": var_historic(port_rets, 0.99),
     }
 
+    # Compute asset-level metrics
     asset_metrics = {}
     for t in rets.columns:
       s = rets[t]
@@ -376,6 +379,7 @@ def main():
       "max_drawdown": max_drawdown(s),
     }
 
+    # Generate and save charts
     charts = [
         os.path.join(REPORT_DIR, "price.png"),
         os.path.join(REPORT_DIR, "cum.png"),
@@ -385,6 +389,7 @@ def main():
         os.path.join(REPORT_DIR, "corr.png"),
     ]
 
+    # Save charts
     save_price_chart(close_prices, charts[0])
     save_cum_returns_chart(port_rets, charts[1])
     save_drawdown_chart(port_rets, charts[2])
@@ -392,9 +397,11 @@ def main():
     save_rolling_volatility(port_rets, charts[4])
     save_correlation_heatmap(rets, charts[5])
 
+    # Create PDF report
     report_path = os.path.join(REPORT_DIR, f"portfolio_report_{end.strftime('%Y%m%d')}.pdf")
     create_pdf_report(report_path, metrics, asset_metrics, charts)
 
+    # Send email with PDF report
     send_email_smtp(
       smtp_user=EMAIL_USER,
       smtp_password=EMAIL_PASS,
@@ -403,6 +410,12 @@ def main():
       receiver_email=RECEIVER_EMAIL,
       report_path=report_path,
     )
-                   
+
+# ===============================
+# Run main function    
+# ===============================
+
 if __name__ == "__main__":
     main()
+
+# ===================================================================END OF FILE=================================================================
