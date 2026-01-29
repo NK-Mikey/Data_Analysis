@@ -395,8 +395,14 @@ def main():
     report_path = os.path.join(REPORT_DIR, f"portfolio_report_{end.strftime('%Y%m%d')}.pdf")
     create_pdf_report(report_path, metrics, asset_metrics, charts)
 
-    if EMAIL_USER and EMAIL_PASS and RECEIVER_EMAIL:
-        send_email(report_path)
+    send_email_smtp(
+      smtp_user=EMAIL_USER,
+      smtp_password=EMAIL_PASS,
+      smtp_server=SMTP_SERVER,
+      smtp_port=SMTP_PORT,
+      receiver_email=RECEIVER_EMAIL,
+      report_path=report_path,
+    )
                    
 if __name__ == "__main__":
     main()
