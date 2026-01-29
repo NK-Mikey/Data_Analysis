@@ -1,7 +1,0 @@
-yfinance
-pandas
-numpy
-seaborn
-matplotlib
-reportlab
-PIL
